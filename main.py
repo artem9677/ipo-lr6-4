@@ -1,9 +1,8 @@
-import io
 string = str(input("Введите строку: "))
 i = 0
 arr = list()
 
-with io.open('text.txt',encoding="utf-8") as file:
+with open('text.txt',encoding="utf-8") as file:
     for line in file:
         if string in line:
             arr.append(line)
